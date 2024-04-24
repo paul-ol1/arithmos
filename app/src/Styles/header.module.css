@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Manrope&display=swap");
+
+.HeaderTitle {
+  font-size: 1.5rem;
+  font-family: 'Manrope', monospace;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:#758CA3;
+  font-weight: 700;
+  margin-left: 20px;
+
+}
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 8px;
+}
+
+.HeaderEnd {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.userCutout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.userCutout p {
+  font-family: "manrope";
+  font-weight: lighter;
+}
+.user {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.activitycenter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 40px;
+}
+.icon {
+  width: 22px;
+  transition: all 0.1s ease-in-out;
+}
+.icon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(58%) sepia(6%) saturate(1535%)
+    hue-rotate(169deg) brightness(92%) contrast(93%);
+}
+.activitydisplay {
+  margin-top: 45px;
+  position: absolute;
+  z-index: 100000;
+}
+
+.notification {
+  width: 250px;
+  z-index: 100000;
+  height: 280px;
+  background: #ffffff;
+  border-width: 0px 1px 1px 1px;
+  border-radius: 0px 5px 5px 0px;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.notif_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  padding: 10px;
+}
+.notif_content {
+}
+
+.notif_row {
+  height: 40px;
+}
+.notif_row:hover {
+  background: rgba(117, 140, 163, 0.1);
+  border-top: 1px solid #e4e4e4;
+  cursor: pointer;
+}
+.headersb {
+  border: 1px solid black;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #758ca3;
+  font-size: 13px;
+  border-radius: 7px;
+  height: 20px;
+  padding: 5px;
+}
+.notification::-webkit-scrollbar {
+    display: none;
+}

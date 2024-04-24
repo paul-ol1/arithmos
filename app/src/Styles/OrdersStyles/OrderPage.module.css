@@ -1,0 +1,175 @@
+.upperSection,.LowerSection {
+    width: 90%;
+    margin-top: 20px;
+}
+.upperSection{
+    display: flex;
+    flex-direction: row;
+}
+.OrderDetails {
+    width: 70%;
+    height: 120px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.orderaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:  20%;
+    gap: 10px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.right{
+    width: 35%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.detailsinput {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.orderstatus,.action{
+    width: 100px !important;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.orderstatus:hover, .action:hover{
+    cursor: pointer;
+    border: 1px solid ;
+}
+.header {
+    display: flex;
+    border-radius: 10px;
+    background: white;
+    height: 25px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rowelem {
+    text-align: center;
+    width: 19%;
+    font-size: 14px;
+    color: #6c7a89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addnew {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addnew img {
+    filter: invert(69%) sepia(7%) saturate(3273%) hue-rotate(70deg)
+        brightness(99%) contrast(92%);
+    width: 20px;
+    transition: filter 0.5s ease-in-out;
+}
+.addnew img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(40%) sepia(15%) saturate(1272%) hue-rotate(61deg)
+        brightness(99%) contrast(85%);
+}
+.row {
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    background: white;
+    height: 25px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.row input {
+    text-align: center;
+}
+.remove {
+    border-radius: 50%;
+    color: white;
+    width: 18px;
+    height: 18px;
+    background: #ffa1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.remove:hover{
+    background: white;
+    color: #ffa1a1;
+    border: 1px solid #ffa1a1;
+}
+.row:hover {
+    cursor: pointer;
+}
+.row:hover .remove {
+    animation: RemoveButtAppear 0.7s ease-in 0.5s forwards;
+}
+
+.OrderList{
+    height: 410px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.OrderList::-webkit-scrollbar {
+    display: none;
+}
+.unordered,.pending,.received{
+    width: 80px;
+    border-radius: 10px;
+}
+.pending{
+    background: #FEFFDB;
+    color:#C8CC01 ;
+}
+.unordered{
+    color:#CC0101;
+    background: #FFDBDB;
+}
+.received{
+    color:#00F40A;
+    background: #E6FFDB;
+}
+#save{
+    background: #5ACE58;
+    color: #fff;
+}
+#delete{
+    background: #FFA6A6;
+    color: #fff;
+}
+
+@keyframes RemoveButtAppear {
+0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    }
+100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}

@@ -1,0 +1,212 @@
+/* Overview */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dashTitle {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+}
+
+.upperSection {
+  width: 95%;
+  height: 300px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lowerSection {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 10px;
+}
+
+.lowerLeft {
+  width: 75%;
+  height: 270px;
+  background: #e1eeff;
+  padding: 10px;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.lowerRight {
+  width: 25%;
+  height: 270px;
+  background-color: #e1eeff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.salesOverviewBoxes {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.hsToday {
+  width: 100%;
+  height: 100%;
+}
+.hsToday h1 {
+  padding: 10px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+}
+.hsToday div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+}
+
+.box {
+  width: 45%;
+  height: 70px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.box img {
+  color: rgb(117, 140, 163);
+  filter: brightness(0) saturate(100%) invert(58%) sepia(6%) saturate(1535%)
+    hue-rotate(169deg) brightness(92%) contrast(93%);
+}
+
+.left {
+  width: 80%;
+  text-align: center;
+  font-size: 13px;
+  color: #758ca3;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.chart {
+  width: 60%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.today h3 {
+  font-size: 16px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bolder;
+  color: #000000;
+}
+.tableheadelem,
+.tablerowelem {
+  width: 16%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tableheadelem {
+  font-size: 13px;
+  color: #80a7ec;
+  font-weight: 400;
+}
+.tablerowelem {
+  font-size: 13px;
+  text-align: center;
+  font-weight: lighter;
+  font-style: normal;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  height: 30px;
+  border-bottom: 1px solid #80a7ec;
+}
+.tb::-webkit-scrollbar {
+  display: none;
+}
+.todayTable {
+  width: 100%;
+}
+.todayTable table {
+  margin: auto;
+  margin-top: 10px;
+  width: 96%;
+
+  height: calc(60%-20px);
+  overflow: scroll;
+  table-layout: auto;
+}
+.theader {
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #80a7ec;
+}
+.todayTable tbody {
+  margin-top: 10px;
+  display: block;
+  height: 180px;
+  overflow: auto;
+  width: 100%;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.todayTable tr {
+  display: table;
+  width: 100%;
+  margin-bottom: 5px;
+
+  border-radius: 10px;
+  table-layout: fixed;
+}
+.tb {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.tablecount {
+}
+
+.status {
+  width: 50%;
+  margin: auto;
+  height: 17px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+.status:hover {
+  cursor: pointer;
+}
+
+.paid {
+  border: 1px solid green;
+  color: green;
+}
+.unpaid {
+  border: 1px solid red;
+  color: red;
+}
+.pending {
+  border: 1px solid grey;
+  color: grey;
+}

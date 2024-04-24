@@ -1,0 +1,107 @@
+.OrdersContainer{
+
+    width: 90%;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    margin-left:30px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.create{
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.OrderElement{
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-family: monospace;
+
+
+}
+.OrderElement,.create{
+    transition: background 1s ease-in-out;
+}
+.OrderElement:hover,.create:hover{
+    cursor: pointer;
+    background: #FAF9F6;
+}
+
+.status{
+    width: 100px;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Pending{
+    background: #FEFFDB;
+    color:#C8CC01 ;
+}
+.Incomplete{
+    color:#CC0101;
+    background: #FFDBDB;
+}
+.Received{
+    color:#00F40A;
+    background: #E6FFDB;
+}
+
+.DateRangeContainer{
+    width: 90%;
+}
+.daterange{
+    float: right;
+    display: flex;
+    width: 200px;
+    font-size: 13px;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+.daterange:hover{
+    cursor: pointer;
+}
+
+.daterange img{
+    width: 24px;
+}
+
+
+@keyframes fadeInDelay {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

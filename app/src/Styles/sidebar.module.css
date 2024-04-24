@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Manrope&display=swap');
+
+.SidebarContainer{
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "general"
+    "others"
+    ;
+    height: 100vh;
+    grid-template-rows: 2fr 4fr 4fr;
+    font-family: 'manrope';
+}
+
+
+.logoarea{
+    grid-area: "logo";
+}
+.general{
+    grid-area: "general";
+}
+.others{
+    grid-area: "others";
+}
+.item{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    transition: all .1s ease-in-out;
+
+}
+.item:hover{
+    cursor: pointer;
+    background-color: rgba(117, 140, 163, 0.3)!important;
+    color:white !important;
+    fill: white;
+    filter:none;
+}
+.item:hover img{
+    color: azure;
+    fill: white;
+    filter: brightness(0) invert(1);
+}
+.item div{
+    flex-basis: 20%;
+}
+.item p{
+
+}
+.divider{
+    width: 60%;
+    margin: auto;
+    border-bottom: 1px solid grey;
+}
+.Sidebarheadtext{
+    color: #909090;
+    margin-left: 15px;
+}
+.active{
+    color: rgb(117, 140, 163);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(6%) saturate(1535%) hue-rotate(169deg) brightness(92%) contrast(93%)
+}
